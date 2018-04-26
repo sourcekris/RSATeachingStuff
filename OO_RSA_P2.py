@@ -7,10 +7,11 @@ import libnum
 
 class RSAPrivateKey(object):
   keytype = "private"
+  e = 65537
 
-  def __init__(self):
+  def __init__(self, bitlength):
     while True:
-      self.p = libnum.generater_prime(bitlength)
+      self.p = libnum.generate_prime(bitlength)
       self.q = libnum.generate_prime(bitlength)
 
       # p and q must be co-prime.
@@ -51,45 +52,30 @@ class RSAKeys(object):
   # __init__ is the class constructor method and is invoked automatically on instantiation.
   def __init__(self, bitlength):
     # construct a new key pair here in this constructor.
-    while True:
-      self.p = libnum.generater_prime(bitlength)
-      self.q = libnum.generate_prime(bitlength)
-
-      # p and q must be co-prime.
-      if libnum.gcd(self.p,self.q) == 1:
-        break
-
-    self.phi = (self.p - 1) * (self.q - 1)
-    self.d = libnum.invmod(self.e, self.phi)
-    self.n = self.p * self.q
-
+    self.PrivateKey = RSAPrivateKey(10)
+    self.PublicKey = RSAPublicKey(self.PrivateKey)
 
   # String method returns a string with a pretty formated Key Pair.
   def String(self):
     out  = "Object: RSAKey Key Pair\n"
-    out += "Public Key  {{n,e}}: {{{0},{1}}}\n".format(self.n, self.e)
-    out += "Private Key {{n,d}}: {{{0},{1}}}\n".format(self.n, self.d)
+    out += "Public Key  {{n,e}}: {{{0},{1}}}\n".format(self.PublicKey.n, self.PublicKey.e)
+    out += "Private Key {{n,d}}: {{{0},{1}}}\n".format(self.PrivateKey.n, self.PrivateKey.d)
     return out
 
   # Show method displays the pretty formated Key Pair on the console.
   def Show(self):
     print self.String()
 
-  # PublicKey returns a tuple of the PublicKey components.
+  # PublicKey returns the PublicKey object.
   def PublicKey(self):
-    return (self.n, self.e)
+    return self.PublicKey
 
-  # PrivateKey returns a tuple of the PrivateKey components.
+  # PrivateKey returns the PrivateKey object.
   def PrivateKey(self):
-    return (self.n, self.d)
+    return self.PrivateKey
 
 if __name__ == "__main__":
   b = RSAKeys(10)
-  b.Show()
-
-  # excercises ?
-
-  # 4. Write a class just for PublicKeys and another one just for Private Keys. Have RSAKey instantiate an object of each.
-
-
+  b.PublicKey.Show()
+  b.PrivateKey.Show()
 
