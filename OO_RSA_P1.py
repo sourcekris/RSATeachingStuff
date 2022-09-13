@@ -1,17 +1,17 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python3
 
-# OO_RSA_P1.py is the first part of the object oriented Python lesson. We want to demonstrate 
-# what a class / object are in python, how they store state and have methods. How they are 
-# constructed and how they are defined. The difference between members that are shared and members
+# OO_RSA_P1.py is the first object oriented pattern. It demonstrates an initial implementation
+# of a class / object are in python, how it stores state and has methods. How it is are 
+# constructed and how it is defined. The difference between members that are shared and members
 # that are private etc.
 
 import random
-import libnum
+from Crypto.Util.number import GCD, inverse
 
 # isPrime tests if x is prime or not by trial division.
-# TODO(flypig2016): Find a more efficient method!
+# TODO: Find a more efficient method!
 def isPrime(x):
-  for i in xrange(2, x-1):
+  for i in range(2, x-1):
     if x % i == 0:
       return False
   return True
@@ -39,11 +39,11 @@ class RSAKeys(object):
       self.q = generatePrime(bitlength)
 
       # p and q must be co-prime.
-      if libnum.gcd(self.p,self.q) == 1:
+      if GCD(self.p,self.q) == 1:
         break
 
     self.phi = (self.p - 1) * (self.q - 1)
-    self.d = libnum.invmod(self.e, self.phi)
+    self.d = inverse(self.e, self.phi)
     self.n = self.p * self.q
 
 
@@ -56,16 +56,16 @@ class RSAKeys(object):
 
   # Show method displays the pretty formated Key Pair on the console.
   def Show(self):
-    print self.String()
+    print(self.String())
 
   # PublicKey returns a tuple of the PublicKey components.
   def PublicKey(self):
-    # TODO(flypig2016): implement me
+    # TODO: implement me
     pass
 
   # PrivateKey returns a tuple of the PrivateKey components.
   def PrivateKey(self):
-    # TODO(flypig2016): implement me
+    # TODO: implement me
     pass
 
 if __name__ == "__main__":

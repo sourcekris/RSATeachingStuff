@@ -1,9 +1,7 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python3
 
 # OO_RSA_P2.py is the second part of the object oriented Python lesson.
-
-import random
-import libnum
+from Crypto.Util.number import GCD, inverse, getPrime
 
 class RSAPrivateKey(object):
   keytype = "private"
@@ -11,22 +9,22 @@ class RSAPrivateKey(object):
 
   def __init__(self, bitlength):
     while True:
-      self.p = libnum.generate_prime(bitlength)
-      self.q = libnum.generate_prime(bitlength)
+      self.p = getPrime(bitlength)
+      self.q = getPrime(bitlength)
 
       # p and q must be co-prime.
-      if libnum.gcd(self.p,self.q) == 1:
+      if GCD(self.p,self.q) == 1:
         break
 
     self.phi = (self.p - 1) * (self.q - 1)
-    self.d = libnum.invmod(self.e, self.phi)
+    self.d = inverse(self.e, self.phi)
     self.n = self.p * self.q
 
   def String(self):
     return "RSAPrivateKey Object: {{{0},{1}}}".format(self.n, self.d)
 
   def Show(self):
-    print self.String()
+    print(self.String())
   
 class RSAPublicKey(object):
   keytype = "public"
@@ -39,7 +37,7 @@ class RSAPublicKey(object):
     return "RSAPublicKey Object: {{{0},{1}}}".format(self.n, self.e)
 
   def Show(self):
-    print self.String()
+    print(self.String())
 
 # RSAKeys inherits from the object base class and stores state and holds methods for constructing
 # and printing an RSA Key Pair.
@@ -64,7 +62,7 @@ class RSAKeys(object):
 
   # Show method displays the pretty formated Key Pair on the console.
   def Show(self):
-    print self.String()
+    print(self.String())
 
   # PublicKey returns the PublicKey object.
   def PublicKey(self):
