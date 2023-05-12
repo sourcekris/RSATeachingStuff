@@ -4,6 +4,8 @@
 
 * [Introduction](intro.md)
 * [Setup](setup.md)
+  * [Setup Pre-work Virtualbox](virtualbox.md)
+  * [Setup Pre-work Windows Subsystem for Linux](wsl.md)
 * [Exercise 1: Generating an RSA Public/Private Key Pair](exercise1.md)
 * [Exercise 2: Encrypting and Decrypting a Message](exercise2.md)
 * [Exercise 3: Creating RSA Key Pair and Encryption/Decryption Functions](exercise3.md)
