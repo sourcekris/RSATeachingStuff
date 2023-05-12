@@ -93,3 +93,8 @@ d = inverse(e, phi)
 print(f"Public key: (n = {n}, e = {e})")
 print(f"Private key: (n = {n}, d = {d})")
 ```
+
+### Next
+
+* [Exercise 2](exercise2.md)
+* [Back to Index](index.md)
