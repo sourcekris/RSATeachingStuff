@@ -44,3 +44,13 @@ It is important to repeat and not that the security of RSA relies on the difficu
 the product of two large primes. If an attacker can factor this product, they can easily compute
 the private key and decrypt any messages sent using the public key. Therefore, the size of the
 primes used in the RSA algorithm is critical to its security.
+
+## Exercises
+
+In the following exercises we will work with Python to implement "textbook RSA". Textbook RSA
+refers to implementations of the RSA algorithm without any additional security measures or
+padding schemes.
+
+## Author
+
+* [Kris Hunt](https://github.com/sourcekris)
