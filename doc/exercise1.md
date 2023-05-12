@@ -1,6 +1,6 @@
 # RSA Exercises - Python
 
-## Exercise 1: Generating an RSA Public/Private Key Pair using PyCryptodome
+## Exercise 1: Generating an RSA Public/Private Key Pair
 
 ### Overview
 
