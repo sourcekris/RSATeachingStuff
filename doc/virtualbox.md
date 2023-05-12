@@ -4,7 +4,6 @@
 
 1. Open a web browser and visit the official VirtualBox website:
    [https://www.virtualbox.org/](https://www.virtualbox.org/)
-
 2. Click on the "Downloads" menu in the top navigation bar.
 3. Under "VirtualBox x.x.x platform packages," select the Windows host version and click on the 
    download link.
@@ -36,7 +35,6 @@
 7. In the settings window, navigate to the "Storage" tab and add the downloaded Linux ISO as a
    virtual optical disk by clicking on the disk icon with the green plus sign. Locate and select
    the downloaded ISO file.
-
 8. Click "OK" to save the settings.
 
 ### Step 5: Install Linux in the Virtual Machine
