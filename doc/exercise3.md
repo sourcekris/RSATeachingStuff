@@ -129,3 +129,8 @@ print("Ciphertext:", ciphertext)
 decrypted_message = decrypt_rsa(ciphertext, private_key)
 print("Decrypted message:", decrypted_message)
 ```
+
+### Next
+
+* [Exercise 4](exercise4.md)
+* [Back to Index](index.md)

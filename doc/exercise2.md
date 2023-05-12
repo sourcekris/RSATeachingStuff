@@ -120,3 +120,8 @@ print("Ciphertext: {}".format(ciphertext))
 print("Decrypted plaintext: {}".format(decrypted_plaintext))
 print("Original message: {}".format(original_message))
 ```
+
+### Next
+
+* [Exercise 3](exercise3.md)
+* [Back to Index](index.md)

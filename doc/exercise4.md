@@ -163,3 +163,8 @@ print("Ciphertext:", ciphertext)
 decrypted_message = rsa.decrypt(ciphertext)
 print("Decrypted message:", decrypted_message)
 ```
+
+### Next
+
+* [Exercise 5](exercise5.md)
+* [Back to Index](index.md)
