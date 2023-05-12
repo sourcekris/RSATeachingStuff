@@ -82,9 +82,9 @@ assert(plaintext == original_message)
 Print the ciphertext, decrypted plaintext, and the original message using the following code:
 
 ```python
-print("Ciphertext: {}".format(ciphertext))
-print("Decrypted plaintext: {}".format(decrypted_plaintext))
-print("Original message: {}".format(original_message))
+print(f"Ciphertext: {ciphertext}")
+print(f"Decrypted plaintext: {decrypted_plaintext}")
+print(f"Original message: {original_message}")
 ```
 
 ### Step 8: Run the program
@@ -116,9 +116,9 @@ original_message = long_to_bytes(decrypted_long).decode()
 
 assert(plaintext == original_message)
 
-print("Ciphertext: {}".format(ciphertext))
-print("Decrypted plaintext: {}".format(decrypted_plaintext))
-print("Original message: {}".format(original_message))
+print(f"Ciphertext: {ciphertext}")
+print(f"Decrypted plaintext: {decrypted_plaintext}")
+print(f"Original message: {original_message}")
 ```
 
 ### Next

@@ -74,11 +74,11 @@ public_key, private_key = generate_keypair()
 # Encrypt a message using the public key
 message = "Hello, RSA!"
 ciphertext = encrypt_rsa(message, public_key)
-print("Ciphertext:", ciphertext)
+print(f"Ciphertext: {ciphertext}")
 
 # Decrypt the ciphertext using the private key
 decrypted_message = decrypt_rsa(ciphertext, private_key)
-print("Decrypted message:", decrypted_message)
+print(f"Decrypted message: {decrypted_message}")
 ```
 
 ### Step 6: Run the program
@@ -123,11 +123,11 @@ public_key, private_key = generate_keypair()
 # Encrypt a message using the public key
 message = "Hello, RSA!"
 ciphertext = encrypt_rsa(message, public_key)
-print("Ciphertext:", ciphertext)
+print(f"Ciphertext: {ciphertext}")
 
 # Decrypt the ciphertext using the private key
 decrypted_message = decrypt_rsa(ciphertext, private_key)
-print("Decrypted message:", decrypted_message)
+print(f"Decrypted message: {decrypted_message}")
 ```
 
 ### Next

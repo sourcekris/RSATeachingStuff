@@ -96,11 +96,11 @@ rsa.generate_keypair()
 # Encrypt a message
 message = "Hello, RSA!"
 ciphertext = rsa.encrypt(message)
-print("Ciphertext:", ciphertext)
+print(f"Ciphertext: {ciphertext}")
 
 # Decrypt the ciphertext
 decrypted_message = rsa.decrypt(ciphertext)
-print("Decrypted message:", decrypted_message)
+print(f"Decrypted message: {decrypted_message}")
 ```
 
 ### Step 4: Run the program
@@ -157,11 +157,11 @@ rsa.generate_keypair()
 # Encrypt a message
 message = "Hello, RSA!"
 ciphertext = rsa.encrypt(message)
-print("Ciphertext:", ciphertext)
+print(f"Ciphertext: {ciphertext}")
 
 # Decrypt the ciphertext
 decrypted_message = rsa.decrypt(ciphertext)
-print("Decrypted message:", decrypted_message)
+print(f"Decrypted message: {decrypted_message}")
 ```
 
 ### Next
