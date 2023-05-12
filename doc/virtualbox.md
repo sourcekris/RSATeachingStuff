@@ -17,7 +17,7 @@
 ### Step 3: Download a Linux Distribution ISO
 
 1. Choose a Linux distribution that you want to install in the virtual machine. Popular options 
-   include Ubuntu, Fedora, or CentOS.
+   include Ubuntu, Fedora, or CentOS. Recommend Ubuntu for the remainder of these exercises.
 2. Visit the official website of the chosen Linux distribution and download the ISO image file.
 
 ### Step 4: Create a Virtual Machine
@@ -53,7 +53,8 @@
 1. Open a web browser and visit the official VirtualBox website:
    [https://www.virtualbox.org/](https://www.virtualbox.org/)
 2. Click on the "Downloads" menu in the top navigation bar.
-3. Under "VirtualBox x.x.x platform packages," select the macOS host version and click on the download link.
+3. Under "VirtualBox x.x.x platform packages," select the macOS host version and click on the 
+   download link.
 
 ### Step 2: Install VirtualBox
 
@@ -63,8 +64,8 @@
 
 ### Step 3: Download a Linux Distribution ISO
 
-1. Choose a Linux distribution that you want to install in the virtual machine. Popular options include
-   Ubuntu, Fedora, or CentOS.
+1. Choose a Linux distribution that you want to install in the virtual machine. Popular options 
+   include Ubuntu, Fedora, or CentOS. Recommend Ubuntu for the remainder of these exercises.
 2. Visit the official website of the chosen Linux distribution and download the ISO image file.
 
 ### Step 4: Create a Virtual Machine
