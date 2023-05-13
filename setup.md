@@ -91,11 +91,9 @@ VSCode should now be installed on your Ubuntu machine.
 ### Step 6: Set Up Python Environment in VSCode
 
 1. Open VSCode by searching for it in the applications menu or using the terminal command:
-
    ```
    code
    ```
-
 2. Install the Python extension for VSCode by Microsoft. Go to the Extensions view (Ctrl+Shift+X),
    search for "Python," and click the "Install" button.
 3. Create a new Python file in VSCode by clicking on the Explorer icon (Ctrl+Shift+E) and then
@@ -106,11 +104,9 @@ VSCode should now be installed on your Ubuntu machine.
 6. In the terminal, navigate to the directory where your Python file is located using the `cd` 
    command.
 7. Run your Python program using the python3 command followed by the name of your Python file:
-
    ```
    python3 filename.py
    ```
-
 8. This will install the PyCryptodome package along with its dependencies.
 
 With these steps, you have successfully installed Python, Pip, and VSCode on your Ubuntu machine.
