@@ -2,10 +2,10 @@
 
 ## Python Setup for Ubuntu Linux
 
-Note: If you don't have Linux installed, you can download VirualBox and install it inside a
+**Note:** *If you don't have Linux installed, you can download VirualBox and install it inside a
       VM. See [instructions here](virtualbox.md). If you're using Windows you may prefer
       to use Windows Subsystem for Linux (WSL) instead. You can read
-      [instructions on using that here](wsl.md).
+      [instructions on using that here](wsl.md).*
 
 Before we start coding, let's set up a basic Python coding environment on Linux. These
 steps cover Ubuntu Linux but might work on any Debian based Linux. It includes the installation of Python 
