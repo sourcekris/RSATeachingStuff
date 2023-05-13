@@ -84,6 +84,7 @@ padding schemes.
 * [Exercise 3: Creating RSA Key Pair and Encryption/Decryption Functions](exercise3.md)
 * [Exercise 4: Implementing RSA Encryption and Decryption using Object-Oriented Python](exercise4.md)
 * [Exercise 5: Adding Type Hints to the RSA Encryption and Decryption Class](exercise5.md)
+* [Exercise 6: Homework and followup ideas](exercise6.md)
 
 
 ## Author
