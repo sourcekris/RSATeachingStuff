@@ -45,7 +45,24 @@ That is, `m ≡ c^d (mod n)`.
 
 The recipient can then recover the original plaintext message `m`.
 
-It is important to repeat and not that the security of RSA relies on the difficulty of factoring
+```
+    Public Key (e, n)                 Private Key (d, n)
+  +-------------------+              +-------------------+
+  |                   |              |                   |
+  |    Encryption     |              |    Decryption     |
+  |                   |              |                   |
+  +-------------------+              +-------------------+
+             |                                  |
+             |                                  |
+             v                                  v
+  +-------------------+              +-------------------+
+  |                   |              |                   |
+  |   Ciphertext (c)   |             |   Plaintext (m)   |
+  |                   |              |                   |
+  +-------------------+              +-------------------+
+```
+
+It is important to repeat and note that the security of RSA relies on the difficulty of factoring
 the product of two large primes. If an attacker can factor this product, they can easily compute
 the private key and decrypt any messages sent using the public key. Therefore, the size of the
 primes used in the RSA algorithm is critical to its security.
