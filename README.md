@@ -57,7 +57,7 @@ The recipient can then recover the original plaintext message `m`.
              v                                  v
   +-------------------+              +-------------------+
   |                   |              |                   |
-  |   Ciphertext (c)   |             |   Plaintext (m)   |
+  |   Ciphertext (c)  |              |   Plaintext (m)   |
   |                   |              |                   |
   +-------------------+              +-------------------+
 ```
