@@ -76,7 +76,7 @@ originalMessage := string(originalMessageBytes)
 
 ### Step 6: Ensure the ciphertext was decrypted properly
 
-To verify nothing broke during encryption/decryption, check that our `plaintext` is the same as our `originalMessage`. To do so, we will use the Go built-in `fmt.Println()` which will print an error if the arguments do not match:
+To verify nothing broke during encryption/decryption, check that our `plaintext` is the same as our `originalMessage`. To do so, we will use the Go built-in `fmt.Println()` which will print `False` if the values do not match:
 
 ```go
 fmt.Println(plaintext == originalMessage)
