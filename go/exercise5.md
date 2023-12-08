@@ -1,4 +1,4 @@
-# RSA Exercises - Python
+# RSA Exercises - Golang
 
 ## Exercise 6: Followup work
 
@@ -14,3 +14,5 @@ getting experience:
 4. Key Size and Security: Modify the RSA script to experiment with different key sizes 
    (e.g., 512 bits, 1024 bits, 2048 bits). Generate key pairs with different sizes and 
    observe the impact on encryption and decryption time.
+5. Signing: Write a secondary function of the code to take an arbitrary file and produce
+   a digital signature that can be used to digitally verify the integrity of the message.
