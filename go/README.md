@@ -75,7 +75,7 @@ padding schemes.
 
 ## Table of Contents
 
-* [Introduction](intro.md)
+* [Introduction](README.md)
 * [Setup](setup.md)
   * [Setup Pre-work Virtualbox](../virtualbox.md)
   * [Setup Pre-work Windows Subsystem for Linux](../wsl.md)
