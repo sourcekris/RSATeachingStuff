@@ -1,6 +1,6 @@
 # RSA Exercises - Golang
 
-## Exercise 6: Followup work
+## Exercise 5: Followup work
 
 As part of learning Python you could choose to do some of these tasks yourself to follow up
 getting experience:
